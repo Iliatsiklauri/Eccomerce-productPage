@@ -7,7 +7,7 @@ const Bottom = ({ name, setName }: propType) => {
   };
   return (
     <>
-      <h1>this is Bottom {name}</h1>
+      <h1>this is Botto {name}</h1>
       <input className="border-2 border-black" type="text" onChange={changeName} />
     </>
   );
