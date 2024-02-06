@@ -1,9 +1,12 @@
+import { useState } from 'react';
 import './App.css';
+import Title from './components/Title';
 
 function App() {
+  const [name, setName] = useState('');
   return (
     <>
-      <h1>ilia</h1>
+      <Title name={name} setName={setName} />
     </>
   );
 }
