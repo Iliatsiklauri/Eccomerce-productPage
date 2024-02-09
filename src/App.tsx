@@ -1,14 +1,26 @@
 import { useState } from 'react';
-import './App.css';
-import Title from './components/Title';
+import Gallery from './components/Gallery';
+import Navbar from './components/Navbar';
 
-function App() {
-  const [name, setName] = useState('');
+const App = () => {
+  const [sidebar, setSidebar] = useState(false);
   return (
-    <>
-      <Title name={name} setName={setName} />
-    </>
+    <div className="flex w-screen h-screen flex-col items-center relative">
+      <Navbar sidebar={sidebar} setSidebar={setSidebar} />
+      <Gallery />
+      <div
+        className={`h-full w-[250px] top-0 absolute bg-white left-[-250px] flex flex-col items-start justify-center ${
+          !sidebar ? 'left-[0]' : null
+        }`}
+      >
+        <p>Collection</p>
+        <p>Men</p>
+        <p>Woman</p>
+        <p>About</p>
+        <p>Contact</p>
+      </div>
+    </div>
   );
-}
+};
 
 export default App;
