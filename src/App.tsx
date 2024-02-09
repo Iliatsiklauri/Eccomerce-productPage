@@ -9,7 +9,7 @@ const App = () => {
       <Navbar sidebar={sidebar} setSidebar={setSidebar} />
       <Gallery />
       <div
-        className={`h-full w-[250px] top-0 absolute bg-white left-[-250px] flex flex-col items-start justify-center ${
+        className={`h-full w-[250px] top-0 absolute bg-white left-[-250px] flex flex-col items-start  gap-3 justify-center ${
           !sidebar ? 'left-[0]' : null
         }`}
       >
