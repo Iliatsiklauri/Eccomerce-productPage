@@ -14,7 +14,6 @@ const Navbar = ({ sidebar, setSidebar }: propsType) => {
             className="cursor-pointer"
             onClick={() => {
               setSidebar(!sidebar);
-              console.log(sidebar);
             }}
           />
           <img src="public\sneakers 2.png" alt="" />
