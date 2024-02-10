@@ -22,20 +22,20 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="w-full h-[300px] bg-black ">
+    <div className="w-full h-[300px] max-w-[425px] relative xl:h-[445px]">
       <img
         src="public\Group 18 Copy 3.png"
         alt=""
-        className="cursor-pointer absolute mt-28 right-4"
+        className="cursor-pointer absolute mt-28 right-4 xl:hidden"
         onClick={handlePrev}
       />
       <img
         src="public\Group 18 Copy 2.png"
         alt=""
-        className="cursor-pointer absolute mt-28 left-4"
+        className="cursor-pointer absolute mt-28 left-4 xl:hidden"
         onClick={handleNext}
       />
-      <img src={images[currentImageIndex]} className="w-full h-full" />
+      <img src={images[currentImageIndex]} className="w-full h-full xl:rounded-xl" />
     </div>
   );
 };
