@@ -11,7 +11,7 @@ const Button = ({ text, display }: textType) => {
   if (!context) {
     return <h1>no context</h1>;
   }
-  const { push, setPush } = context;
+  const { setPush } = context;
 
   return (
     <div
@@ -19,7 +19,6 @@ const Button = ({ text, display }: textType) => {
       onClick={() => {
         if (display) {
           setPush(true);
-          console.log(push);
         }
         null;
       }}

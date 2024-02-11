@@ -10,7 +10,7 @@ const Left = () => {
   const { sidebar } = context;
   return (
     <div
-      className={`h-full w-[250px] top-0 absolute bg-white left-[-250px] flex flex-col items-start  gap-3  pt-20 pl-6 transition-all duration-500 ease-in-out ${
+      className={`h-full w-[250px] top-0 absolute bg-white left-[-250px] flex flex-col items-start  gap-3  pt-20 pl-6 transition-all duration-500 ease-in-out z-40 ${
         !sidebar ? 'left-[0]' : null
       }`}
     >

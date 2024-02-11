@@ -1,7 +1,13 @@
-import { useState } from 'react';
-
+import { useContext } from 'react';
+import { GlobalStates } from '../data';
+import { images } from '../data';
 const Gallery = () => {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const context = useContext(GlobalStates);
+
+  if (!context) {
+    return <h1>nocontext</h1>;
+  }
+  const { currentImageIndex, setCurrentImageIndex } = context;
 
   const handlePrev = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -14,12 +20,6 @@ const Gallery = () => {
       prevIndex < images.length - 1 ? prevIndex + 1 : 0
     );
   };
-  const images = [
-    'public/main/image-product-1.jpg',
-    'public/main/image-product-2.jpg',
-    'public/main/image-product-3.jpg',
-    'public/main/image-product-4.jpg',
-  ];
 
   return (
     <div className="w-full h-[300px] max-w-[425px] relative xl:h-[445px]">
@@ -35,7 +35,10 @@ const Gallery = () => {
         className="cursor-pointer absolute mt-28 left-4 xl:hidden"
         onClick={handleNext}
       />
-      <img src={images[currentImageIndex]} className="w-full h-full xl:rounded-xl" />
+      <img
+        src={images[currentImageIndex]}
+        className="w-full h-full xl:rounded-xl xl:cursor-pointer"
+      />
     </div>
   );
 };

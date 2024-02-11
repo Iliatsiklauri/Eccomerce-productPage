@@ -17,7 +17,7 @@ const Navbar = () => {
             <img
               src="Combined Shape 2 (1).svg"
               alt=""
-              className="xl:hidden cursor-pointer z-10 ransition-opacity hover:opacity-90"
+              className="xl:hidden cursor-pointer z-50 ransition-opacity hover:opacity-90"
               onClick={() => {
                 setSidebar(!sidebar);
               }}
@@ -26,7 +26,7 @@ const Navbar = () => {
             <img
               src="public\icon-close.svg"
               alt=""
-              className="cursor-pointer z-10 ransition-opacity hover:opacity-90"
+              className="cursor-pointer z-50 ransition-opacity hover:opacity-90"
               onClick={() => {
                 setSidebar(!sidebar);
               }}
@@ -34,20 +34,20 @@ const Navbar = () => {
           )}
           <img src="public\logo.svg" alt="" />
         </div>
-        <div className="gap-8 hidden xl:flex mr-[350px] mt-8">
-          <p className="cursor-pointer  hover:border-b-4 outline-none pb-7 hover:border-b-[#FF7E1B]">
+        <div className="gap-8 hidden xl:flex mr-[350px] mt-9">
+          <p className="cursor-pointer  hover:border-b-4  pb-8 hover:pb-5 hover:border-b-[#FF7E1B]">
             Collections
           </p>
-          <p className="cursor-pointer hover:border-b-4 outline-none pb-7 hover:border-b-[#FF7E1B]">
+          <p className="cursor-pointer hover:border-b-4  pb-8 hover:pb-5 hover:border-b-[#FF7E1B]">
             Men
           </p>
-          <p className="cursor-pointer  hover:border-b-4 outline-none pb-7 hover:border-b-[#FF7E1B]">
+          <p className="cursor-pointer  hover:border-b-4  pb-8 hover:pb-5 hover:border-b-[#FF7E1B]">
             Women
           </p>
-          <p className="cursor-pointer  hover:border-b-4 outline-none pb-7 hover:border-b-[#FF7E1B]">
+          <p className="cursor-pointer  hover:border-b-4  pb-8 hover:pb-5 hover:border-b-[#FF7E1B]">
             About
           </p>
-          <p className="cursor-pointer hover:border-b-4 outline-none pb-7 hover:border-b-[#FF7E1B]">
+          <p className="cursor-pointer hover:border-b-4  pb-8 hover:pb-5 hover:border-b-[#FF7E1B]">
             Contact
           </p>
         </div>
