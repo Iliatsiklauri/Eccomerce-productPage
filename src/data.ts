@@ -18,10 +18,10 @@ type globaltype = {
 };
 
 export const images = [
-  'public/main/image-product-1.jpg',
-  'public/main/image-product-2.jpg',
-  'public/main/image-product-3.jpg',
-  'public/main/image-product-4.jpg',
+  'image-product-1.jpg',
+  'image-product-2.jpg',
+  'image-product-3.jpg',
+  'image-product-4.jpg',
 ];
 
 export const GlobalStates = createContext<globaltype | null>(null);
