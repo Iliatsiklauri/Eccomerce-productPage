@@ -12,7 +12,7 @@ const Cart = () => {
 
   return (
     <div
-      className={`h-[256px] w-[360px]  absolute top-16  m-auto rounded-lg bg-white  ${
+      className={`h-[256px] w-[360px]  xl:top-20 absolute top-16 right-6  m-auto rounded-lg bg-white  ${
         cart ? 'block' : 'hidden'
       }`}
       style={{

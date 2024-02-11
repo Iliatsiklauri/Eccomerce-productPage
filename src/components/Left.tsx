@@ -14,11 +14,11 @@ const Left = () => {
         !sidebar ? 'left-[0]' : null
       }`}
     >
-      <p className="cursor-pointer">Collection</p>
-      <p className="cursor-pointer">Men</p>
-      <p className="cursor-pointer">Woman</p>
-      <p className="cursor-pointer">About</p>
-      <p className="cursor-pointer">Contact</p>
+      <p className="cursor-pointer text-1D2026 font-bold text-xl leading-7">Collection</p>
+      <p className="cursor-pointer text-1D2026 font-bold text-xl leading-7">Men</p>
+      <p className="cursor-pointer text-1D2026 font-bold text-xl leading-7">Woman</p>
+      <p className="cursor-pointer text-1D2026 font-bold text-xl leading-7">About</p>
+      <p className="cursor-pointer text-1D2026 font-bold text-xl leading-7">Contact</p>
     </div>
   );
 };

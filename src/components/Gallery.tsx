@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import { GlobalStates } from '../data';
 import { images } from '../data';
+
 const Gallery = () => {
   const context = useContext(GlobalStates);
 
@@ -22,7 +23,7 @@ const Gallery = () => {
   };
 
   return (
-    <div className="w-full h-[300px] max-w-[425px] relative xl:h-[445px]">
+    <div className={`w-full h-[300px] max-w-[auto] relative xl:h-[445px]`}>
       <img
         src="public\Group 18 Copy 3.png"
         alt=""
@@ -43,7 +44,7 @@ const Gallery = () => {
         className=" hidden xl:block w-full h-full bg-transparent cursor-pointer absolute top-0"
         onClick={() => {
           if (centerDiv) {
-            setCenterDiv(!centerDiv), console.log(centerDiv);
+            setCenterDiv(!centerDiv);
           }
           return;
         }}

@@ -39,18 +39,16 @@ const App = () => {
       }}
     >
       <div
-        className={`flex h-full flex-col items-center pb-12 relative xl:flex-row xl:justify-center xl:items-center xl:h-screen xl:gap-[175px] xl:mb-32`}
+        className={`flex flex-col items-center pb-12 relative xl:flex-row xl:justify-center xl:items-center xl:h-full xl:gap-[175px] `}
       >
         <div
           className={` items-center justify-center absolute h-full w-full bottom-0 transition-all duration-500 ease-in-outs
-            ${
-              sidebar ? 'hidden' : 'bg-black bg-opacity-90 z-30 sm:flex md:flex xl:hidden'
-            }
+            ${sidebar ? 'hidden' : 'bg-black bg-opacity-90 z-30 xl:hidden'}
             `}
         ></div>
         <div
           className={`items-center justify-center absolute h-full w-full bottom-0 transition-all duration-500 ease-in-outs
-          ${centerDiv ? 'hidden' : 'bg-black bg-opacity-90 z-30 flex'}`}
+          ${centerDiv ? 'hidden' : 'bg-black bg-opacity-90 z-30 xl:flex hidden'}`}
         >
           <div className="relative items-center justify-center flex-col">
             <div
@@ -65,7 +63,7 @@ const App = () => {
         </div>
         <div className="absolute hidden w-[85%] h-[1px] bg-[#E4E9F2] top-[100px] xl:block"></div>
         <Navbar />
-        <div className="w-full max-w-[425px] xl:mt-80">
+        <div className="w-full max-w-[425px] xl:mt-40">
           <Gallery />
           <Thumbnail />
         </div>

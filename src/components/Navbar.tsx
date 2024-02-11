@@ -55,10 +55,11 @@ const Navbar = () => {
           <img
             src="public\icon-cart.svg"
             alt=""
-            className="cursor-pointer"
+            className="cursor-pointer w-[21px] h-[20px]  xl:mt-[18px]"
             onClick={() => setCart(!cart)}
           />
-          <img src="Oval.png" alt="" />
+          <img src="Oval.png" alt="" className="xl:hidden" />
+          <img src="ovaal.png" alt="" className="hidden xl:block w-[50px] " />
         </div>
       </div>
     </div>
