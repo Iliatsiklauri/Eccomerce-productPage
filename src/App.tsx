@@ -17,7 +17,7 @@ const App = () => {
   const [count, setCount] = useState(1);
   const [cart, setCart] = useState(false);
   const [push, setPush] = useState(false);
-  const [centerDiv, setCenterDiv] = useState(false);
+  const [centerDiv, setCenterDiv] = useState(true);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   return (
     <GlobalStates.Provider
