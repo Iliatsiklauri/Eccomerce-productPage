@@ -26,7 +26,7 @@ const Navbar = () => {
             <img
               src="public\icon-close.svg"
               alt=""
-              className="cursor-pointer z-50 ransition-opacity hover:opacity-90"
+              className="xl:hidden cursor-pointer z-50 ransition-opacity hover:opacity-90"
               onClick={() => {
                 setSidebar(!sidebar);
               }}

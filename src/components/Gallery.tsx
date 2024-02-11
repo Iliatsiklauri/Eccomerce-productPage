@@ -7,7 +7,7 @@ const Gallery = () => {
   if (!context) {
     return <h1>nocontext</h1>;
   }
-  const { currentImageIndex, setCurrentImageIndex } = context;
+  const { currentImageIndex, setCurrentImageIndex, setCenterDiv, centerDiv } = context;
 
   const handlePrev = () => {
     setCurrentImageIndex((prevIndex) =>
@@ -39,6 +39,15 @@ const Gallery = () => {
         src={images[currentImageIndex]}
         className="w-full h-full xl:rounded-xl xl:cursor-pointer"
       />
+      <div
+        className=" hidden xl:block w-full h-full bg-transparent cursor-pointer absolute top-0"
+        onClick={() => {
+          if (centerDiv) {
+            setCenterDiv(!centerDiv), console.log(centerDiv);
+          }
+          return;
+        }}
+      ></div>
     </div>
   );
 };

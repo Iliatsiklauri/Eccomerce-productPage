@@ -13,6 +13,8 @@ type globaltype = {
   setPush: React.Dispatch<React.SetStateAction<boolean>>;
   currentImageIndex: number;
   setCurrentImageIndex: React.Dispatch<React.SetStateAction<number>>;
+  centerDiv: boolean;
+  setCenterDiv: React.Dispatch<React.SetStateAction<boolean>>;
 };
 
 export const images = [
