@@ -24,7 +24,7 @@ const Navbar = () => {
             />
           ) : (
             <img
-              src="public\icon-close.svg"
+              src="icon-close.svg"
               alt=""
               className="xl:hidden cursor-pointer z-50 ransition-opacity hover:opacity-90"
               onClick={() => {
@@ -32,7 +32,7 @@ const Navbar = () => {
               }}
             />
           )}
-          <img src="public\logo.svg" alt="" />
+          <img src="logo.svg" alt="" />
         </div>
         <div className="gap-8 hidden xl:flex mr-[350px] mt-9">
           <p className="cursor-pointer  hover:border-b-4  pb-8 hover:pb-5 hover:border-b-[#FF7E1B]">
@@ -53,7 +53,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-6">
           <img
-            src="public\icon-cart.svg"
+            src="icon-cart.svg"
             alt=""
             className="cursor-pointer w-[21px] h-[20px]  xl:mt-[18px]"
             onClick={() => setCart(!cart)}

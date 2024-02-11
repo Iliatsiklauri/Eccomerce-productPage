@@ -10,7 +10,7 @@ const Setprice = () => {
   return (
     <div className="mt-6 w-full h-[56px] flex justify-between pl-5 pr-5 items-center border-xl bg-[#F6F8FD]">
       <img
-        src="public\icon-minus.svg"
+        src="icon-minus.svg"
         alt=""
         className="cursor-pointer"
         onClick={() => {
@@ -20,7 +20,7 @@ const Setprice = () => {
       <h1>{count}</h1>
 
       <img
-        src="public\icon-plus.svg"
+        src="icon-plus.svg"
         alt=""
         className="cursor-pointer"
         onClick={() => {

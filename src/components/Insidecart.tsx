@@ -13,7 +13,7 @@ const Insidecart = () => {
     <div className="w-11/12 h-[150px] bg-white absolute bottom-[20px] left-[15px]">
       <div className="w-full h-full flex flex-col items-center justify-between">
         <div className="flex justify-between items-center w-full mt-4">
-          <img src="public\Rectangle (2).png" alt="" />
+          <img src="Rectangle (2).png" alt="" />
           <div>
             <p className=" text-gray-600  text-base font-normal leading-6">
               Fall Limited Edition Sneakers
@@ -28,7 +28,7 @@ const Insidecart = () => {
             </div>
           </div>
           <img
-            src="public\icon-delete.svg"
+            src="icon-delete.svg"
             alt=""
             className="w-[14px] h-[16px] cursor-pointer"
             onClick={() => setPush(false)}
